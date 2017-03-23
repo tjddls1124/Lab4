@@ -1,5 +1,6 @@
 package com.example.lab4_3;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -68,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
                     image1.setScaleX(1);
                     image1.setScaleY(1);break;
                 }
+            case R.id.next :{
+                Intent intent = new Intent(getApplicationContext(),Main2Activity.class);
+                startActivity(intent);
+            }
+
         }
 
 
